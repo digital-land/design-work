@@ -17,6 +17,24 @@
           "imgref": "local-plan-dataset.png"
         }
       ]
+    },
+    {
+      "title": "Dataset",
+      "img_path": "local-plans/dataset/",
+      "path": [
+        {
+          "caption": "Datasets",
+          "imgref": "datasets.png"
+        },
+        {
+          "caption": "List of local plans",
+          "imgref": "local-plans-dataset.png"
+        },
+        {
+          "caption": "A local plan entry",
+          "imgref": "single-local-plan-entry-page.png"
+        }
+      ]
     }
   ]
 }
