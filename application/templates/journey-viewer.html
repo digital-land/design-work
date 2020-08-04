@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block head %}
+ <script src="/static/javascripts/vendor/jquery-3.4.1.min.js"></script>
+{% endblock %}
+
+{% block main %}
+
+  <div class="toolbar">
+    <input id="slider" type="range" min="5" max="500" step="5" value="100" title="zoom screen size" />
+    <p class="js-full-height" title="Toggle full height on screens">Full height</p>
+  </div>
+
+  <p class="app-header"><a href="/">Digital land design work</a></p>
+
+  <div id="content">
+    <h1>{{ journeys.journey_name }}</h1>
+
+    <p class="intro">{{ journeys.description|markdown }}</p>
+
+    <p class="exemplar-intro">Scenarios: <span class="all-toggle">(<span class="js-open-all">open all</span><span class="js-close-all">close all</span>)</span></p>
+
+    {% for journey in journeys.userjourneys %}
+    <div class="image-set">
+    <h2 class="image-set-title">{{ journey.title }}</h2>
+    <div class="image-set-images">
+      {% for path in journey.path %}
+      <div class="image">
+        <div class="image-title">
+          <span class="close js-close-screen">✕</span>
+          <span class="journey">{{ journey.title }}</span>
+          <h2>{{ path.caption }}</h2>
+        </div>
+        <div class="image-wrapper js-open-screen">
+            <img src="/static/images/{{ journey.img_path }}{{ path.imgref }}" />
+        </div>
+        <div class="arrow">→</div>
+        <div class="note">
+          {% for note in path.note %}
+          <p>{{ note|markdown }}</p>
+          {% endfor %}
+
+          {% if path.changes is defined %}
+            <h3>Changes</h3>
+            <ul>
+            {% for change in path.changes %}
+              <li>{{ change }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+          {% if path.findings is defined %}
+            <h3>Findings</h3>
+            <ul>
+            {% for finding in path.findings %}
+              <li>{{ finding }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+
+          <p class="next button js-next-screen">Next</p>
+          <p class="prev button js-prev-screen">Prev</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+    {% endfor %}
+
+    <section class="meta">
+      <p>Last updated on {{ journeys.last_updated }}.</p>
+      <p>These screenshots are subject to change and do not necessarily reflect any current or
+      future iteration of this service.</p>
+    </section>
+    
+  </div>
+
+{% endblock %}
+
+{% block body_end %}
+<script src="/static/javascripts/journeys.js"></script>
+{% endblock %}

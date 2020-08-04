@@ -1,0 +1,22 @@
+{
+  "journey_name": "Local plans pages",
+  "last_updated": "August 2020",
+  "description": "Screenshots of the local plans related pages on the [digital land site](http://digital-land.github.io).",
+  "userjourneys": [
+    {
+      "title": "Specification",
+      "img_path": "local-plans/spec/",
+      "path": [
+        {
+          "caption": "List of datasets",
+          "imgref": "list-of-datasets.png",
+          "note": ["some note", "and \n\n [a link](http://digital-land.github.io)"]
+        },
+        {
+          "caption": "Local plan dataset",
+          "imgref": "local-plan-dataset.png"
+        }
+      ]
+    }
+  ]
+}

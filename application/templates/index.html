@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% from "macros/lists.html" import renderHighLevelList %}
+
+{% block content %}
+<p class="intro">Browse the some of the design work that has gone into the AGS alpha. You'll be able to look at the journeys and how they have changed over time, as well as some diagrams the aim to explain the problem and the tech choices made.</p>
+	
+<h2>Journeys</h2>
+
+{{ renderHighLevelList({
+    "listItems": [
+        {
+            "label": "Local plans pages",
+            "url": "/journey/local_plans"
+        }
+    ]
+}) }}
+
+<hr class="section-break" />
+
+<h2>Diagrams</h2>
+
+{{ renderHighLevelList({
+    "listItems": [
+        {
+            "label": "Map of local plans data schemas",
+            "url": "/static/images/diagrams/local-plan-schemas.v3@2x.png",
+            "text": "A diagram to show how all the schemas that make up the local plans specification fit together."
+        },
+        {
+            "label": "Ecosystem",
+            "url": "/static/images/diagrams/ecosystem4068x3200.png"
+        },
+        {
+            "label": "How the frontend pieces fit together",
+            "url": "/static/images/diagrams/frontend-map-v2@2x.png"
+        }
+    ]
+}) }}
+
+
+{% endblock content %}

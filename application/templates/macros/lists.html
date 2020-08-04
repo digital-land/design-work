@@ -1,0 +1,15 @@
+{% macro renderHighLevelList(params) %}
+<ul class="exemplar-list {{ params.classes if params.classes else '' }}">
+    {% for item in params.listItems %}
+    <li>
+        <a {%- if item.classes %} class="{{item.classes}}"{% endif %} href="{{ item.url }}">{{loop.index}}. {{ item.label }}</a>
+        {% if item.main %}
+            <span>(main)</span>
+        {% endif %}
+        {%- if item.text %}
+        <p class="text">{{ item.text }}</p>
+        {% endif -%} 
+    </li>
+    {% endfor %}
+</ul>
+{% endmacro %}
