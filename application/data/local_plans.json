@@ -9,7 +9,8 @@
       "path": [
         {
           "caption": "Start point",
-          "imgref": "../../question_mark.svg"
+          "imgref": "../../question_mark.svg",
+          "note": ["## who is this for \n\n ## what is it for \n\n ## how is it built \n\n ## where does the info/data come from \n\n ## where does the content come from \n\n ## whats missing \n\n ## page type"]
         },
         {
           "caption": "Specification home",
@@ -110,6 +111,10 @@
       "title": "Project pages",
       "img_path": "local-plans/project/",
       "path": [
+        {
+          "caption": "Home",
+          "imgref": "../../digital-land-home-page.png"
+        },
         {
           "caption": "All projects",
           "imgref": "digital-land-project-page.png"
