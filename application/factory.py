@@ -44,6 +44,8 @@ def register_filters(app):
     app.add_template_filter(strip)
     from application.filters import markdown_filter
     app.add_template_filter(markdown_filter, name="markdown")
+    from application.filters import markdown_file
+    app.add_template_filter(markdown_file, name="md_file")
 
 
 def register_extensions(app):

@@ -10,11 +10,12 @@
         {
           "caption": "Start point",
           "imgref": "../../question_mark.svg",
-          "note": ["### who is this for \n\n### what is it for \n\n### how is it built \n\n### where does the info/data come from \n\n### where does the content come from \n\n### whats missing \n\n### page type"]
+          "markdown": "data/markdown/start.md"
         },
         {
           "caption": "Specification home",
           "imgref": "specification-entry.png"
+          
         },
         {
           "caption": "List of datasets",

@@ -57,6 +57,10 @@
             </ul>
           {% endif %}
 
+          {% if path.markdown %}
+            {{ path.markdown|md_file }}
+          {% endif %}
+
           <p class="next button js-next-screen">Next</p>
           <p class="prev button js-prev-screen">Prev</p>
         </div>
