@@ -128,6 +128,20 @@
           "imgref": "local-plans-beta-page.png"
         }
       ]
+    },
+    {
+      "title": "Other pages",
+      "img_path": "local-plans/spec/",
+      "path": [
+        {
+          "caption": "Schema data download",
+          "imgref": "schema-data-download.png"
+        },
+        {
+          "caption": "Typology page",
+          "imgref": "typology-page.png"
+        }
+      ]
     }
   ]
 }
