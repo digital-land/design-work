@@ -81,9 +81,13 @@
       ]
     },
     {
-      "title": "Dataset",
+      "title": "Dataset journey example",
       "img_path": "local-plans/dataset/",
       "path": [
+        {
+          "caption": "Start point",
+          "imgref": "../../question_mark.svg"
+        },
         {
           "caption": "Datasets",
           "imgref": "datasets.png"
@@ -95,6 +99,10 @@
         {
           "caption": "A local plan entry",
           "imgref": "single-local-plan-entry-page.png"
+        },
+        {
+          "caption": "Exit point",
+          "imgref": "../../question_mark.svg"
         }
       ]
     }
