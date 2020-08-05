@@ -4,17 +4,37 @@
   "description": "Screenshots of the local plans related pages on the [digital land site](http://digital-land.github.io).",
   "userjourneys": [
     {
-      "title": "Specification",
+      "title": "A specification example",
       "img_path": "local-plans/spec/",
       "path": [
+        {
+          "caption": "Start point",
+          "imgref": "../../question_mark.svg"
+        },
+        {
+          "caption": "Specification home",
+          "imgref": "specification-entry.png"
+        },
         {
           "caption": "List of datasets",
           "imgref": "list-of-datasets.png",
           "note": ["some note", "and \n\n [a link](http://digital-land.github.io)"]
         },
         {
-          "caption": "Local plan dataset",
+          "caption": "Dataset - list of schemas",
           "imgref": "local-plan-dataset.png"
+        },
+        {
+          "caption": "Schema page",
+          "imgref": "schemas/development-plan-schema-page.png"
+        },
+        {
+          "caption": "Field page",
+          "imgref": "development-plan-field-page.png"
+        },
+        {
+          "caption": "Exit point",
+          "imgref": "../../question_mark.svg"
         }
       ]
     },
