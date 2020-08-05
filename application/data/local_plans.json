@@ -19,6 +19,48 @@
       ]
     },
     {
+      "title": "All schema pages",
+      "img_path": "local-plans/spec/",
+      "path": [
+        {
+          "caption": "Development plan",
+          "imgref": "schemas/development-plan-schema-page.png"
+        },
+        {
+          "caption": "Development plan type",
+          "imgref": "schemas/development-plan-type-schema-page.png"
+        },
+        {
+          "caption": "Development plan document",
+          "imgref": "schemas/development-plan-document-schema-page.png"
+        },
+        {
+          "caption": "Development plan timetable",
+          "imgref": "schemas/development-plan-timetable-schema-page.png"
+        },
+        {
+          "caption": "Development plan status",
+          "imgref": "schemas/development-plan-status-schema-page.png"
+        },
+        {
+          "caption": "Development policy",
+          "imgref": "schemas/development-policy-schema-page.png"
+        },
+        {
+          "caption": "Development policy category",
+          "imgref": "schemas/development-policy-category-schema-page.png"
+        },
+        {
+          "caption": "Development metric",
+          "imgref": "schemas/development-metric-schema-page.png"
+        },
+        {
+          "caption": "Development policy metric",
+          "imgref": "schemas/development-policy-metric-schema-page.png"
+        }
+      ]
+    },
+    {
       "title": "Dataset",
       "img_path": "local-plans/dataset/",
       "path": [
