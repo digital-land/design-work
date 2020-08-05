@@ -105,6 +105,24 @@
           "imgref": "../../question_mark.svg"
         }
       ]
+    },
+    {
+      "title": "Project pages",
+      "img_path": "local-plans/project/",
+      "path": [
+        {
+          "caption": "All projects",
+          "imgref": "digital-land-project-page.png"
+        },
+        {
+          "caption": "Project page",
+          "imgref": "local-plans-project-page.png"
+        },
+        {
+          "caption": "Beta phase",
+          "imgref": "local-plans-beta-page.png"
+        }
+      ]
     }
   ]
 }
