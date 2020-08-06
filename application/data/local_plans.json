@@ -4,7 +4,7 @@
   "description": "Screenshots of the local plans related pages on the [digital land site](http://digital-land.github.io).",
   "userjourneys": [
     {
-      "title": "A specification example",
+      "title": "Specification journey example",
       "img_path": "local-plans/spec/",
       "path": [
         {
@@ -14,21 +14,28 @@
         },
         {
           "caption": "Specification home",
-          "imgref": "specification-entry.png"
-          
+          "imgref": "specification-entry.png",
+          "markdown": "data/markdown/spec.md"
         },
         {
           "caption": "List of datasets",
           "imgref": "list-of-datasets.png",
-          "note": ["some note", "and \n\n [a link](http://digital-land.github.io)"]
+          "markdown": "data/markdown/spec-datasets.md"
         },
         {
           "caption": "Dataset - list of schemas",
-          "imgref": "local-plan-dataset.png"
+          "imgref": "local-plan-dataset.png",
+          "markdown": "data/markdown/spec-local-plans.md"
         },
         {
-          "caption": "Schema page",
-          "imgref": "schemas/development-plan-schema-page.png"
+          "caption": "Schema page (publisher)",
+          "imgref": "schemas/development-plan-schema-page.png",
+          "markdown": "data/markdown/spec-publisher-schema.md"
+        },
+        {
+          "caption": "Schema page (MHCLG)",
+          "imgref": "schemas/development-plan-type-schema-page.png",
+          "markdown": "data/markdown/spec-mhclg-schema.md"
         },
         {
           "caption": "Field page",
