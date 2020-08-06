@@ -1,0 +1,29 @@
+{
+    "journey_name": "Organisation pages",
+    "last_updated": "August 2020",
+    "description": "Screenshots of the organisation related pages on the [digital land site](http://digital-land.github.io).",
+    "userjourneys": [
+    {
+        "title": "Organisation journey",
+        "img_path": "organisations/",
+        "path": [
+          {
+            "caption": "Start point",
+            "imgref": "../question_mark.svg"
+          },
+          {
+            "caption": "List of organisations",
+            "imgref": "organisation-list.png"
+          },
+          {
+            "caption": "Search",
+            "imgref": "search_for_org.png"
+          },
+          {
+            "caption": "Individual organisation page",
+            "imgref": "individual_org_page.png"
+          }
+        ]
+    }
+    ]
+}

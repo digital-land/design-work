@@ -1,0 +1,51 @@
+{
+    "journey_name": "Organisation pages",
+    "last_updated": "August 2020",
+    "description": "Screenshots of the brownfield related pages on the [digital land site](http://digital-land.github.io).",
+    "userjourneys": [
+    {
+        "title": "Brownfield data",
+        "img_path": "brownfield/",
+        "path": [
+          {
+            "caption": "Dataset list",
+            "imgref": "../list-of-datasets.png"
+          },
+          {
+            "caption": "National dataset",
+            "imgref": "national-dataset-page.png"
+          },
+          {
+            "caption": "By organisation publication",
+            "imgref": "brownfield-data-by-org.png"
+          },
+          {
+            "caption": "Data from organisation",
+            "imgref": "individual-org-brownfield-register.png"
+          },
+          {
+            "caption": "View the resource",
+            "imgref": "brownfield-view-data-from-resource.png"
+          },
+          {
+            "caption": "Download the data",
+            "imgref": "download_brownfield_data_single_org.png"
+          }
+        ]
+    },
+    {
+        "title": "Resource pages",
+        "img_path": "brownfield/",
+        "path": [
+          {
+            "caption": "View data page",
+            "imgref": "resource_feb_2020.svg"
+          },
+          {
+            "caption": "Check data page",
+            "imgref": "check_2020-02-19.svg"
+          }
+        ]
+    }
+    ]
+}

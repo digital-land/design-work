@@ -1,0 +1,31 @@
+{
+    "journey_name": "Behind the scenes pages",
+    "last_updated": "August 2020",
+    "description": "Screenshots of the pages showing how the [digital land site](http://digital-land.github.io) platform works.",
+    "userjourneys": [
+    {
+        "title": "Collections",
+        "img_path": "other_pages/",
+        "path": [
+          {
+            "caption": "Start point",
+            "imgref": "../question_mark.svg"
+          },
+          {
+            "caption": "List of collections",
+            "imgref": "list_of_collections.png"
+          }
+        ]
+    },
+    {
+      "title": "Map",
+      "img_path": "other_pages/",
+      "path": [
+        {
+          "caption": "Map",
+          "imgref": "digital_land_map_2019_brownfield.png"
+        }
+      ]
+    }
+    ]
+}
