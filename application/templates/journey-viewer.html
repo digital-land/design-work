@@ -61,8 +61,10 @@
             {{ path.markdown|md_file }}
           {% endif %}
 
-          <p class="next button js-next-screen">Next</p>
-          <p class="prev button js-prev-screen">Prev</p>
+          <div class="note-controls">
+            <a class="next button js-next-screen">Next</a>
+            <a class="prev button js-prev-screen">Prev</a>
+          </div>
         </div>
       </div>
       {% endfor %}
