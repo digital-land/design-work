@@ -13,6 +13,10 @@ Would a description on each field help?
 
 **Recommendation**: separate regular register fields from schema specific ones
 
-If MHCLG schema, link to the actual data. E.g. dev con purpose
-
 What are you downloading? Why?
+
+### Build
+
+[Specification repo](https://github.com/digital-land/specification). Page automatically generated based on [schema](https://github.com/digital-land/specification/blob/master/specification/schema.csv) and [schema to field](https://github.com/digital-land/specification/blob/master/specification/schema-field.csv) file .  
+Template: Schema?  
+Content: ?

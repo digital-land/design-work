@@ -12,3 +12,9 @@ Would it be helpful to know if an underlying schema has been updated?
 
 * intro text to ground user
 * Content needed to describe each dataset
+
+### Build
+
+[Specification repo](https://github.com/digital-land/specification). Page automatically generated based on [dataset file](https://github.com/digital-land/specification/blob/master/specification/dataset.csv).  
+Template: ?  
+Content: ?
