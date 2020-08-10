@@ -26,54 +26,46 @@
     <div class="image-set-images">
       {% for path in journey.path %}
       <div class="image">
-        <div class="viewer__side">
-          <div class="image-title">
-            <span class="close js-close-screen">✕</span>
-            <span class="journey">{{ journey.title }}</span>
-            <h2>{{ path.caption }}</h2>
-          </div>
-          
-          <div class="note-wrapper">
+        <div class="image-title">
+          <span class="close js-close-screen">✕</span>
+          <span class="journey">{{ journey.title }}</span>
+          <h2>{{ path.caption }}</h2>
+        </div>
+        <div class="image-wrapper js-open-screen">
+            <img src="/static/images/{{ journey.img_path }}{{ path.imgref }}" />
+        </div>
+        <div class="arrow">→</div>
+        <div class="note">
+          {% for note in path.note %}
+          <p>{{ note|markdown }}</p>
+          {% endfor %}
 
-            <div class="note">
-              {% for note in path.note %}
-              <p>{{ note|markdown }}</p>
-              {% endfor %}
+          {% if path.changes is defined %}
+            <h3>Changes</h3>
+            <ul>
+            {% for change in path.changes %}
+              <li>{{ change }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+          {% if path.findings is defined %}
+            <h3>Findings</h3>
+            <ul>
+            {% for finding in path.findings %}
+              <li>{{ finding }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
 
-              {% if path.changes is defined %}
-                <h3>Changes</h3>
-                <ul>
-                {% for change in path.changes %}
-                  <li>{{ change }}</li>
-                {% endfor %}
-                </ul>
-              {% endif %}
-              {% if path.findings is defined %}
-                <h3>Findings</h3>
-                <ul>
-                {% for finding in path.findings %}
-                  <li>{{ finding }}</li>
-                {% endfor %}
-                </ul>
-              {% endif %}
+          {% if path.markdown %}
+            {{ path.markdown|md_file }}
+          {% endif %}
 
-              {% if path.markdown %}
-                {{ path.markdown|md_file }}
-              {% endif %}
-
-            </div>
-          </div>
           <div class="note-controls">
             <a class="next button js-next-screen">Next</a>
             <a class="prev button js-prev-screen">Prev</a>
           </div>
-        
         </div>
-        <div class="image-wrapper js-open-screen">
-          <img src="/static/images/{{ journey.img_path }}{{ path.imgref }}" />
-        </div>
-        <div class="arrow">→</div>
-        
       </div>
       {% endfor %}
     </div>
