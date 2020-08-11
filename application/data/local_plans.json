@@ -99,7 +99,8 @@
         },
         {
           "caption": "Datasets",
-          "imgref": "datasets.png"
+          "imgref": "datasets.png",
+          "markdown": "data/markdown/dataset/dataset-list.md"
         },
         {
           "caption": "List of local plans",
