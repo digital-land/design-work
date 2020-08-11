@@ -14,7 +14,7 @@ Need to scope what “datasets” we list of this page
 We collect and compile an organisation dataset but it isn’t shown on here, is that on purpose or by accident?
 
 How many datasets do we have at the moment? 
- 
+
 * Brownfield land
 * Local plans
 * Organisations?
@@ -26,6 +26,9 @@ How many datasets do we have at the moment?
 
 Investigate: navigating through the branches that each concept (brownfield or local plans) has:
 <https://design-system.service.gov.uk/patterns/step-by-step-navigation/>
+
+Do we need the download section on this page?  
+If we do, what would the user download? Everything? How would that work when all our data is on github, split by dataset.
 
 ### Build
 
