@@ -19,8 +19,6 @@ def markdown_filter(eval_ctx, s):
 @evalcontextfilter
 def markdown_file(eval_ctx, path):
 	full_path = os.path.join(app.root_path,path)
-	print("========================")
-	print(full_path)
 	result = "no file"
 	if eval_ctx.autoescape:
 		if os.path.exists(full_path):
