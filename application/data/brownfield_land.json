@@ -21,7 +21,8 @@
           },
           {
             "caption": "Data from organisation",
-            "imgref": "individual-org-brownfield-register.png"
+            "imgref": "individual-org-brownfield-register.png",
+            "note": ["Is it clear that this page shows a sample of the data rather than ALL the data?"]
           },
           {
             "caption": "View the resource",
