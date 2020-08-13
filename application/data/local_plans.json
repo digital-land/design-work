@@ -92,10 +92,12 @@
     {
       "title": "Dataset journey example",
       "img_path": "local-plans/dataset/",
+      "description": "The local plans dataset is made up of data in a shape defined by multiple schemas.  \n\nWe have been exploring how the [shape of the data](https://docs.google.com/drawings/d/1zkz_7RzPlJ9iXuMKy_6p1seVbBJ7lYmKD1EQ5kZ1Tgs) will impact the [journeys users could take](https://docs.google.com/drawings/d/1QAVcgyvWJDUgd0jRZMr2ymYRsT6iAuqFNGB0pkZmh30).",
       "path": [
         {
           "caption": "Start point",
-          "imgref": "../../question_mark.svg"
+          "imgref": "../../question_mark.svg",
+          "markdown": "data/markdown/dataset/site-structure.md"
         },
         {
           "caption": "Datasets",

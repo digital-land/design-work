@@ -24,6 +24,9 @@
     <div class="image-set">
     <h2 class="image-set-title">{{ journey.title }}</h2>
     <div class="image-set-images">
+      {% if journey.description %}
+        {{ journey.description|markdown }}
+      {% endif %}
       {% for path in journey.path %}
       <div class="image">
         <div class="viewer__side">
