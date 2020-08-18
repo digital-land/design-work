@@ -72,7 +72,7 @@
           </div>
         
         </div>
-        <div class="image-wrapper js-open-screen">
+        <div class="image-wrapper js-open-screen" data-image-name="{% if path.name %}{{ path.name }}{% else %}{{ path.imgref|replace('.png', '')|replace('.jpg', '')|replace('.svg', '') }}{% endif %}">
           <img src="/static/images/{{ journey.img_path }}{{ path.imgref }}" />
         </div>
         <div class="arrow">→</div>

@@ -7,9 +7,8 @@
     });
 
     // Close all scenarios by default
-    $('.image-set-images').hide();
-    $('.toolbar').hide();
-
+    // $('.image-set-images').hide();
+    // $('.toolbar').hide();
 
 
     // toggle a scenario
@@ -66,30 +65,39 @@
       $(this).hide();
     });
 
+
+    function updateHash(txt) {
+      window.location.hash = txt;
+    }
+
     // Opens full-screen view of current image
     $(".js-open-screen").click(function( event ) {
-      var screen = $(this).parents('.image')
-      openScreen(screen);
+      var img_wrapper = this;
+      //var screen = $(this).parents('.image')
+      var img_name = img_wrapper.dataset.imageName;
+      //openScreen(screen);
+      updateHash(img_name);
     });
 
     // Go to next image when in full-screen view
     $(".js-next-screen").click(function( event ) {
       var screen = $(this).parents('.image');
-      openScreen(screen.next());
+      updateHash(screen.next().find(".js-open-screen").data("imageName"))
     });
 
     // Go to previous image when in full-screen view
     $(".js-prev-screen").click(function( event ) {
       var screen = $(this).parents('.image');
-      openScreen(screen.prev());
+      updateHash(screen.prev().find(".js-open-screen").data("imageName"))
     });
 
     // Close full-screen view
     $(".js-close-screen").click(function( event ) {
       var screen = $(this).parents('.image');
       closeScreen(screen);
+      // removes the hash
+      history.replaceState(null, null, ' ');
     });
-
 
 
 
@@ -178,6 +186,40 @@
         $('.note').removeClass('visible');
       }
     }
+
+
+    function hashHandler(e) {
+      var hash = window.location.hash.split("#")[1]
+      var image = document.querySelector(`[data-image-name="${hash}"]`)
+      //var image = document.querySelector(`[data-image-name="specification-entry"]`)
+      var screen = $(image).parents('.image')
+      openScreen(screen)
+    }
+  
+    window.addEventListener('hashchange', hashHandler, false);
+
+
+    // there is an issue if opening a screenshot straight away
+    // => the app hasn't had change to close (and set up) all the journey sets
+    // => need to reorganise code so that it
+    // => looks for presence of hash
+    // => if hash, set up journey sets, leaving one "open" and closing the others, then open the image fullscreen
+    // => if no hash, set up all journey sets, all should be closed
+
+    // check if hash is set to something
+    var initial_hash = window.location.hash
+    if( initial_hash.length ) {
+      initial_hash = initial_hash.split("#")[1]
+      if( initial_hash.length > 0 ) {
+        var image = document.querySelector(`[data-image-name="${initial_hash}"]`)
+        var screen = $(image).parents('.image')
+        openScreen(screen)
+      }
+    } else {
+      $('.image-set-images').hide();
+      $('.toolbar').hide();
+    }
+
   });
 
 }).call(this, jQuery, window);
