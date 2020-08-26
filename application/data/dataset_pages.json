@@ -1,0 +1,33 @@
+{
+    "journey_name": "Dataset pages",
+    "last_updated": "August 2020",
+    "description": "Screenshots of the dataset related pages on the [digital land site](http://digital-land.github.io).",
+    "userjourneys": [
+    {
+        "title": "Pattern concepts",
+        "img_path": "dataset/",
+        "description": "We have created a [Storyboard](https://docs.google.com/drawings/d/1yanIsNTYsHWP2e8bUlvVnXhoPKqU_a7gtc-O_7DZaB0/edit) to explore the needs of a data consumer.",
+        "path": [
+          {
+            "caption": "Needs",
+            "imgref": "../question_mark.svg"
+          },
+          {
+            "caption": "Generic",
+            "imgref": "dataset-pages-templates.png",
+            "note": ["[See full size image](/static/images/dataset/dataset-pages-templates.png)"]
+          },
+          {
+            "caption": "Applied to brownfield",
+            "imgref": "dataset-pages-brownfield.png",
+            "note": ["[See full size image](/static/images/dataset/dataset-pages-brownfield.png)"]
+          },
+          {
+            "caption": "Applied to local plans",
+            "imgref": "dataset-pages-local-plans.png",
+            "note": ["[See full size image](/static/images/dataset/dataset-pages-local-plans.png)"]
+          }
+        ]
+    }
+    ]
+}
