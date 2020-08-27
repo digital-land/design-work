@@ -10,7 +10,8 @@
         "path": [
           {
             "caption": "Needs",
-            "imgref": "../question_mark.svg"
+            "imgref": "../hierarchy_of_needs.svg",
+            "markdown": "data/markdown/dataset/needs.md"
           },
           {
             "caption": "Generic",
