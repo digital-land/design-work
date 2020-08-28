@@ -73,6 +73,11 @@
             "caption": "Applied to local plans",
             "imgref": "dataset-pages-local-plans.png",
             "note": ["[See full size image](/static/images/dataset/dataset-pages-local-plans.png)"]
+          },
+          {
+            "caption": "Mapped to shape of datasets",
+            "imgref": "duplicate-different-dataset-types.svg",
+            "note": ["[See full size image](/static/images/dataset/duplicate-different-dataset-types.svg)"]
           }
         ]
     }
